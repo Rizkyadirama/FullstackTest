@@ -1,0 +1,23 @@
+.btn-custom-green {
+    color: white;
+    background: #5ad791;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.btn-custom-green:hover, .btn-custom-green:focus {    
+    background: #36d37a;    
+    color:white;
+}
+
+.btn-custom-gray{
+    color: #000;
+    background: #ebebeb;
+    padding: 2px 15px;
+    border-radius: 3px;
+}
+
+.alert-custom-red{
+    color: #fff;
+    background-color: #ff717e;
+}
