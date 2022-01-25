@@ -15,9 +15,11 @@
 </head>
 <body>
     <div class="container">
-    <h2 class="text-center mt-5">Category</h2>
-
-    @yield('content')
+        <div class="box-custom">
+            <h2 class="text-center mt-5">Category</h2>
+    
+            @yield('content')
+        </div>
     </div>
 </body>
 </html>
