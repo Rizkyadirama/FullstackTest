@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\CategoryController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/product');
 });
 
 
@@ -24,3 +25,7 @@ Route::get('/login-admin', function () {
 });
 
 Route::resource('category', CategoryController::class);
+Route::get('/product', [ProductController::class, 'index']); //untuk user
+Route::get('/productlist', [ProductController::class, 'listForInternal'])->name('product.index'); ; //untuk tim internal
+Route::post('/productlist', [ProductController::class, 'store'])->name('product.store'); 
+Route::get('/product-input', [ProductController::class, 'create'])->name('product.input'); 

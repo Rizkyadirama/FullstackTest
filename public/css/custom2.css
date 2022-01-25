@@ -38,4 +38,12 @@ body {
     background-color: #fff;
     border-radius: 12px;
     padding: 4px 20px;
+
+
+.item-custom-box{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px 3px #3333;
+    padding:15px;
+
 }
